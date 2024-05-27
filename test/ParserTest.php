@@ -64,7 +64,7 @@ class ParserTest extends TestCase
         }';
 
         $expected = "WEBVTT\n\n";
-        $expected .= "0\n00:00:00.123 --> 00:00:00.987\nSingle segment test.\n\n";
+        $expected .= "00:00:00.123 --> 00:00:00.987\nSingle segment test.\n\n";
 
         $this->assertEquals($expected, (new Parser())->convert($jsonInput));
     }

@@ -2,9 +2,6 @@
 
 namespace Bergo\Whisper2Webvtt;
 
-use DateTime;
-
-
 class Parser
 {
     public function convert(string $jsonContent): string
@@ -23,7 +20,6 @@ class Parser
             $end = $this->formatTime($seg['end']);
             $text = $seg['text'];
 
-            $vtt .= "{$seg['id']}\n";
             $vtt .= "$start --> $end\n";
             $vtt .= "$text\n\n";
         }

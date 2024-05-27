@@ -9,7 +9,6 @@ PHP library to convert whisper json output to WebVTT format.
 ## Usage
 
     use Bergo\Whisper2Webvtt\Parser;
-    use Bergo\Whisper2Webvtt\ParserException;
 
     $parser = new Bergo\Whisper2Webvtt\Parser();
 
