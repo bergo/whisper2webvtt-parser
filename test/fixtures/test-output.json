@@ -1,0 +1,61 @@
+{
+    "segments": [
+      {
+        "id": 0,
+        "start": 0,
+        "end": 5000000000,
+        "text": "Dies ist eine kleine Testaufnahme für den WebVTT-Paser.",
+        "tokens": [
+          50364,
+          10796,
+          1418,
+          3018,
+          22278,
+          9279,
+          9507,
+          32796,
+          2959,
+          1441,
+          9573,
+          53,
+          28178,
+          12,
+          47,
+          17756,
+          13,
+          50614
+        ]
+      },
+      {
+        "id": 1,
+        "start": 5000000000,
+        "end": 7000000000,
+        "text": "Sie enthält zwei Segmente.",
+        "tokens": [
+          3559,
+          948,
+          28068,
+          12002,
+          318,
+          20181,
+          1576,
+          13,
+          50714
+        ]
+      },
+      {
+        "id": 2,
+        "start": 7000000000,
+        "end": 9000000000,
+        "text": "[Beifall]",
+        "tokens": [
+          50364,
+          542,
+          14551,
+          60,
+          50464
+        ]
+      }
+    ],
+    "text": "Dies ist eine kleine Testaufnahme für den WebVTT-Paser.Sie enthält zwei Segmente. [Beifall]"
+  }

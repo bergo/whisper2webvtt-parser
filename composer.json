@@ -1,0 +1,25 @@
+{
+    "name": "bergo/whisper2webvtt-parser",
+    "type": "library",
+    "description": "PHP library to convert whisper json to webvtt",
+    "homepage": "https://github.com/podlove/webvtt-parser",
+    "keywords": ["mogic", "parser", "webvtt", "whisper"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Stefan Berger",
+            "email": "mail@bergo.dev",
+            "homepage": "https://bergo.dev",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "11.*.*"
+    },
+    "autoload": {
+        "psr-4": { "Bergo\\Whisper2Webvtt\\": "src/" }
+    }
+}
