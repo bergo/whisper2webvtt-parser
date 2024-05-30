@@ -9,12 +9,25 @@ on:
 permissions:
   contents: read
 
+
+
 jobs:
   build:
 
     runs-on: ubuntu-latest
+    
+    variables:
+      phpVersion: 8.2
 
     steps:
+    - name: Setup PHP
+      id: setup-php
+      uses: shivammathur/setup-php@v2
+      displayName: 'Setup PHP version $(phpVersion)'
+      with:
+        php-version: '$(phpVersion)'
+        coverage: none
+
     - uses: actions/checkout@v4
 
     - name: Validate composer.json and composer.lock
