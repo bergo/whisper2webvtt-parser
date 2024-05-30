@@ -5,27 +5,33 @@ use Bergo\Whisper2Webvtt\Parser;
 
 class ParserTest extends TestCase
 {
-    public function testFormatTimeWithZero() {
+    public function testFormatTimeWithZero()
+    {
         $this->assertEquals('00:00:00.000', (new Parser())->formatTime(0));
     }
 
-    public function testFormatTimeWithMilliseconds() {
+    public function testFormatTimeWithMilliseconds()
+    {
         $this->assertEquals('00:00:00.500', (new Parser())->formatTime(500000000));
     }
 
-    public function testFormatTimeWithSeconds() {
+    public function testFormatTimeWithSeconds()
+    {
         $this->assertEquals('00:00:05.000', (new Parser())->formatTime(5000000000));
     }
 
-    public function testFormatTimeWithMinutes() {
+    public function testFormatTimeWithMinutes()
+    {
         $this->assertEquals('00:01:00.000', (new Parser())->formatTime(60000000000));
     }
 
-    public function testFormatTimeWithHours() {
+    public function testFormatTimeWithHours()
+    {
         $this->assertEquals('01:00:00.000', (new Parser())->formatTime(3600000000000));
     }
 
-    public function testFormatTimeComplex() {
+    public function testFormatTimeComplex()
+    {
         $this->assertEquals('01:23:45.678', (new Parser())->formatTime(5025678000000));
     }
 
@@ -49,7 +55,8 @@ class ParserTest extends TestCase
         $this->assertStringEqualsFile(__DIR__.'/fixtures/test-output.vtt', $output);
     }
 
-    public function testConvertToWebVTTSingleSegment() {
+    public function testConvertToWebVTTSingleSegment()
+    {
         $jsonInput = '{
             "segments": [
               {
@@ -71,6 +78,6 @@ class ParserTest extends TestCase
 
     private static function empty_result()
     {
-        return "WEBVTT\n\n";;
+        return "WEBVTT\n\n";
     }
 }
